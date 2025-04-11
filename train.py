@@ -76,7 +76,7 @@ if __name__ == '__main__':
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
 
-    train_loader, val_loader = get_cifar10(batch_size=128)
+    train_loader, val_loader = get_cifar10(batch_size=128, augment=True)
 
     model = VisionTransformer(
         img_size=32,

@@ -11,3 +11,4 @@ Epoch 10, Val Loss: 1.0360, Val Acc: 64.06%
 Epoch 11, Val Loss: 1.0086, Val Acc: 64.53%
 Epoch 12, Val Loss: 1.0420, Val Acc: 63.68%
 Epoch 13, Val Loss: 1.0331, Val Acc: 63.96%
+Epoch 14, Val Loss: 1.0095, Val Acc: 65.46%
