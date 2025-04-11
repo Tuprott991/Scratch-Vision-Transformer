@@ -15,11 +15,11 @@ def infer_and_plot(model_path, device):
     model = VisionTransformer(
         img_size=32,
         patch_size=4,
-        embed_dim=128,
-        mlp_dim=256,
-        num_layers=6,
+        embed_dim=256,
+        mlp_dim=512,
+        num_layers=	12,
         num_classes=10,
-        num_heads=8,
+        num_heads= 8,
         dropout=0.1,
         in_channels=3
     ).to(device)
@@ -64,4 +64,4 @@ def plot_confusion_matrix(y_true, y_pred):
 
 if __name__ == "__main__":
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    infer_and_plot("model_ckpt/vit_best_1.pth", device)
+    infer_and_plot("model_ckpt/vit_best_4.pth", device)

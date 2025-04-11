@@ -90,4 +90,4 @@ if __name__ == '__main__':
         in_channels=3
     ).to(device)
 
-    train(model, train_loader, val_loader, device, epochs=50, lr=3e-4, patience=5)
+    train(model, train_loader, val_loader, device, epochs=50, lr=3e-4, patience=7)

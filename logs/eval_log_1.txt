@@ -1,13 +1,12 @@
-        img_size=32,
-        patch_size=4,
-        embed_dim=128,
-        mlp_dim=256,
-        num_layers=6,
-        num_classes=10,
-        num_heads=8,
-        dropout=0.1,
-        in_channels=3
-
+img_size=32,
+patch_size=4,
+embed_dim=128,
+mlp_dim=256,
+num_layers=6,
+num_classes=10,
+num_heads=8,
+dropout=0.1,
+in_channels=3
 
 Epoch 1, Val Loss: 1.6376, Val Acc: 40.85%
 Epoch 2, Val Loss: 1.4533, Val Acc: 47.26%

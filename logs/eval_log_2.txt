@@ -1,3 +1,13 @@
+img_size=32,
+patch_size=4,
+embed_dim=256,
+mlp_dim=512,
+num_layers=8,
+num_classes=10,
+num_heads=8,
+dropout=0.1,
+in_channels=3
+
 Epoch 1, Val Loss: 1.5233, Val Acc: 44.89%
 Epoch 2, Val Loss: 1.3645, Val Acc: 51.33%
 Epoch 3, Val Loss: 1.2959, Val Acc: 53.41%
@@ -12,3 +22,5 @@ Epoch 11, Val Loss: 1.0086, Val Acc: 64.53%
 Epoch 12, Val Loss: 1.0420, Val Acc: 63.68%
 Epoch 13, Val Loss: 1.0331, Val Acc: 63.96%
 Epoch 14, Val Loss: 1.0095, Val Acc: 65.46%
+Epoch 15, Val Loss: 1.0316, Val Acc: 65.45%
+Epoch 16, Val Loss: 1.0358, Val Acc: 65.13%
