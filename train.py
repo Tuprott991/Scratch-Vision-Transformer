@@ -81,11 +81,11 @@ if __name__ == '__main__':
     model = VisionTransformer(
         img_size=32,
         patch_size=4,
-        embed_dim=512,
+        embed_dim=256,
         mlp_dim=512,
-        num_layers=	16,
+        num_layers=	12,
         num_classes=10,
-        num_heads=16,
+        num_heads= 8,
         dropout=0.1,
         in_channels=3
     ).to(device)

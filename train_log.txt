@@ -1,6 +1,18 @@
 Start training at 2025-04-11 14:33:53.438947
 
 
+        1. 
+        img_size=32,
+        patch_size=4,
+        embed_dim=128,
+        mlp_dim=256,
+        num_layers=6,
+        num_classes=10,
+        num_heads=8,
+        dropout=0.1,
+        in_channels=3
+
+        2. 
         img_size=32,
         patch_size=4,
         embed_dim=256,
@@ -11,3 +23,24 @@ Start training at 2025-04-11 14:33:53.438947
         dropout=0.1,
         in_channels=3
 
+        3.
+        img_size=32,
+        patch_size=4,
+        embed_dim=512,
+        mlp_dim=512,
+        num_layers=	16,
+        num_classes=10,
+        num_heads=16,
+        dropout=0.1,
+        in_channels=3
+
+        4. With Augment
+        img_size=32,
+        patch_size=4,
+        embed_dim=256,
+        mlp_dim=512,
+        num_layers=	12,
+        num_classes=10,
+        num_heads= 8,
+        dropout=0.1,
+        in_channels=3
