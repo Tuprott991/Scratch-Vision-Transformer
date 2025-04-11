@@ -1,0 +1,3 @@
+# ignore model_ckpt folder
+model_ckpt/
+data/
