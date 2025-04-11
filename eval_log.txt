@@ -2,3 +2,6 @@ Epoch 1, Val Loss: 1.5233, Val Acc: 44.89%
 Epoch 2, Val Loss: 1.3645, Val Acc: 51.33%
 Epoch 3, Val Loss: 1.2959, Val Acc: 53.41%
 Epoch 4, Val Loss: 1.2138, Val Acc: 56.85%
+Epoch 5, Val Loss: 1.1311, Val Acc: 59.32%
+Epoch 6, Val Loss: 1.0970, Val Acc: 60.71%
+Epoch 7, Val Loss: 1.0858, Val Acc: 61.76%
