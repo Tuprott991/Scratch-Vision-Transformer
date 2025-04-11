@@ -40,18 +40,28 @@ def infer_and_plot(model_path, device):
 
     plot_confusion_matrix(all_labels, all_preds)
 
+# Calculate Top-1 Accuracy
+def calculate_top1_accuracy(y_true, y_pred):
+    correct = (y_true == y_pred).sum()
+    total = len(y_true)
+    accuracy = correct / total * 100
+    return accuracy
+
+# Plot Confusion Matrix including Top-1 Accuracy
 def plot_confusion_matrix(y_true, y_pred):
     cm = confusion_matrix(y_true, y_pred)
-    labels = [str(i) for i in range(10)]
+    accuracy = calculate_top1_accuracy(np.array(y_true), np.array(y_pred))
+
     plt.figure(figsize=(10, 8))
-    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=labels, yticklabels=labels)
-    plt.xlabel('Predicted Label')
-    plt.ylabel('True Label')
-    plt.title('Confusion Matrix on CIFAR-10 Test Set')
-    plt.tight_layout()
-    plt.savefig("confusion_matrix.png")
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', cbar=False,
+                xticklabels=range(10), yticklabels=range(10))
+    plt.xlabel('Predicted')
+    plt.ylabel('True')
+    plt.title(f'Confusion Matrix (Top-1 Accuracy: {accuracy:.2f}%)')
     plt.show()
+    plt.savefig("confusion_matrix.png")
+
 
 if __name__ == "__main__":
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    infer_and_plot("model_ckpt/vit_best.pth", device)
+    infer_and_plot("model_ckpt/vit_best_1.pth", device)
